@@ -13,7 +13,7 @@ class Object:
         self.distance = distance
 
 a = Object(1, 0, 10)
-b = Object(100**(int(sys.argv)-1), -10, 100)
+b = Object(100**(int(sys.argv[1])-1), -10, 100)
 
 line_vector = (math.sqrt(b.mass), math.sqrt(a.mass))
 theta = math.atan(line_vector[1]/line_vector[0])
